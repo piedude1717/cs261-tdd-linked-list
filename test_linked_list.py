@@ -21,34 +21,34 @@ class TestLinkedList(unittest.TestCase):
         except NameError:
             self.fail("Could not instantiate LinkedList.")
 
-    # def test_no_initial_value(self):
-    #     """
-    #     A list instantiated without a value has a head with a value of None.
-    #     """
-    #     ll = LinkedList()
-    #     self.assertEqual(None, ll.value)
+    def test_no_initial_value(self):
+        """
+        A list instantiated without a value has a head with a value of None.
+        """
+        ll = LinkedList()
+        self.assertEqual(None, ll.value)
 
-    # def test_initial_value(self):
-    #     """
-    #     A list/node instantiated with a value retains that value.
-    #     """
-    #     value = fake_value()
-    #     ll = LinkedList(value)
-    #     self.assertEqual(value, ll.value)
+    def test_initial_value(self):
+        """
+        A list/node instantiated with a value retains that value.
+        """
+        value = fake_value()
+        ll = LinkedList(value)
+        self.assertEqual(value, ll.value)
 
-    # def test_next(self):
-    #     """
-    #     A node's `next` attribute initially refers to itself.
-    #     """
-    #     ll = LinkedList()
-    #     self.assertEqual(ll, ll.next)
+    def test_next(self):
+        """
+        A node's `next` attribute initially refers to itself.
+        """
+        ll = LinkedList()
+        self.assertEqual(ll, ll.next)
 
-    # def test_prev(self):
-    #     """
-    #     A node's `prev` attribute initially refers to itself.
-    #     """
-    #     ll = LinkedList()
-    #     self.assertEqual(ll, ll.prev)
+    def test_prev(self):
+        """
+        A node's `prev` attribute initially refers to itself.
+        """
+        ll = LinkedList()
+        self.assertEqual(ll, ll.prev)
 
     # """
     # Sentinel Node

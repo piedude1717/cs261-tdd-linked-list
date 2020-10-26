@@ -5,8 +5,15 @@
 # If you can't figure it out recursively, use a loop. (But then refactor
 # your implementation into a recursive one!)
 # Your implementation should pass the tests in test_sorted_list.py.
-# YOUR NAME
+# Abhimanyu, bais
 
 class LinkedList:
+    def __init__(self, value=None):
+        self.value = value
+        self.data = value
+
+    def value(self):
+        return self.data[self.value]
+
 
     pass
